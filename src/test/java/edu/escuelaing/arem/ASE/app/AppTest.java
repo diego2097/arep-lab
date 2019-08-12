@@ -1,5 +1,6 @@
 package edu.escuelaing.arem.ASE.app;
 
+import java.util.ArrayList;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -31,8 +32,28 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testApp1()
     {
+        try {
+            ArrayList<Double> rta=App.calculo("C:/Users/USUARIO/Documents/lab/prueba.txt");
+            assertEquals(Math.round(rta.get(0)),Math.round(550.6));
+            assertEquals(Math.round(rta.get(1)),Math.round(542.6723));
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());
+        }
         assertTrue( true );
+    }
+    
+     public void testApp2()
+    {
+        try {
+            ArrayList<Double> rta=App.calculo("C:/Users/USUARIO/Documents/lab/prueba2.txt");
+            assertEquals(Math.round(rta.get(0)),Math.round(60.32));  
+            assertEquals(Math.round(rta.get(1)),Math.round(59.06));
+        }
+        catch(Exception e){
+            System.out.println(e.getMessage());    
+        }
     }
 }
