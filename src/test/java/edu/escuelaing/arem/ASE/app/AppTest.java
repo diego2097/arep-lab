@@ -37,7 +37,7 @@ public class AppTest
         try {
             ArrayList<Double> rta=App.calculo("C:/Users/USUARIO/Documents/lab/prueba.txt");
             assertEquals(Math.round(rta.get(0)),Math.round(550.6));
-            assertEquals(Math.round(rta.get(1)),Math.round(542.6723));
+            assertEquals(Math.round(rta.get(1)),Math.round(572.03));
         }
         catch(Exception e){
             System.out.println(e.getMessage());
@@ -50,7 +50,7 @@ public class AppTest
         try {
             ArrayList<Double> rta=App.calculo("C:/Users/USUARIO/Documents/lab/prueba2.txt");
             assertEquals(Math.round(rta.get(0)),Math.round(60.32));  
-            assertEquals(Math.round(rta.get(1)),Math.round(59.06));
+            assertEquals(Math.round(rta.get(1)),Math.round(62.26));
         }
         catch(Exception e){
             System.out.println(e.getMessage());    
