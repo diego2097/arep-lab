@@ -18,8 +18,11 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class App {
+
     public static void main( String[] args ) throws IOException   {
     }
+    
+    
      /**
      * Este metodo se encarga de leer los datos y realizar las operaciones respectivas para calcular la media y las desviacion
      * estandar
