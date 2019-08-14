@@ -1,5 +1,6 @@
 package edu.escuelaing.arem.ASE.app;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -35,22 +36,23 @@ public class AppTest
     public void testApp1()
     {
         try {
+            DecimalFormat df = new DecimalFormat("#.00");
             ArrayList<Double> rta=App.calculo("C:/Users/USUARIO/Documents/lab/prueba.txt");
-            assertEquals(Math.round(rta.get(0)),Math.round(550.6));
-            assertEquals(Math.round(rta.get(1)),Math.round(572.03));
+            assertEquals(df.format(rta.get(0)),"550.60");
+            assertEquals(df.format(rta.get(1)),"572.03");
         }
         catch(Exception e){
             System.out.println(e.getMessage());
         }
-        assertTrue( true );
     }
     
      public void testApp2()
     {
         try {
+            DecimalFormat df = new DecimalFormat("#.00");
             ArrayList<Double> rta=App.calculo("C:/Users/USUARIO/Documents/lab/prueba2.txt");
-            assertEquals(Math.round(rta.get(0)),Math.round(60.32));  
-            assertEquals(Math.round(rta.get(1)),Math.round(62.26));
+            assertEquals(df.format(rta.get(0)),"60.32");  
+            assertEquals(df.format(rta.get(1)),"62.26");
         }
         catch(Exception e){
             System.out.println(e.getMessage());    
