@@ -1,12 +1,12 @@
 # Laboratory 1
 
-##Objective 
+## Objective 
 - Build a program that alllows to calculate the mean and standard deviation of a set of n numbers 
 
-##Build with 
+## Build with 
 - [Maven](https://maven.apache.org/) software tool for the management and construction of Java projects
 
-##Source Code
+## Source Code
 ```java
 package edu.escuelaing.arem.ASE.app;
 import java.io.BufferedReader;
@@ -56,8 +56,8 @@ public class App {
     }
 }
 ```
-##Author 
+## Author 
 - Diego Alejandro Corredor Tolosa 
 
-##License 
+## License 
 - GNU General Public License v3.0
