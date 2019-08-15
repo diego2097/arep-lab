@@ -3,9 +3,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.LinkedList;
+
+
 
 public class App {
 
@@ -20,7 +19,7 @@ public class App {
      * @throws FileNotFoundException si la direccion es incorrecta, y por lo tanto no se encuentra el archivo
      * @throws IOException si ocurre un error en la entrada/salida
      */
-    public static ArrayList<Double> calculo(String path)throws FileNotFoundException, IOException{  
+    public static LinkedList<Double> calculo(String path)throws FileNotFoundException, IOException{  
         String cadena;
         FileReader f = new FileReader(path);
         BufferedReader b = new BufferedReader(f);
@@ -42,7 +41,7 @@ public class App {
             numerador+=Math.pow(lista.get(i)-media,2);
         }
         double desv=Math.sqrt(numerador/(lista.size()-1));
-        ArrayList<Double> rta  = new ArrayList<Double>();
+        LinkedList<Double> rta  = new LinkedList<Double>();
         rta.add(media);
         rta.add(desv);
         return rta; 

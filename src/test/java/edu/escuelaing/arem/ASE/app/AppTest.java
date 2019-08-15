@@ -1,7 +1,6 @@
 package edu.escuelaing.arem.ASE.app;
 
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -37,7 +36,7 @@ public class AppTest
     {
         try {
             DecimalFormat df = new DecimalFormat("#.00");
-            ArrayList<Double> rta=App.calculo("C:/Users/USUARIO/Documents/lab/prueba.txt");
+            LinkedList<Double> rta=App.calculo("C:/Users/USUARIO/Documents/lab/prueba.txt");
             assertEquals(df.format(rta.get(0)),"550.60");
             assertEquals(df.format(rta.get(1)),"572.03");
         }
@@ -50,7 +49,7 @@ public class AppTest
     {
         try {
             DecimalFormat df = new DecimalFormat("#.00");
-            ArrayList<Double> rta=App.calculo("C:/Users/USUARIO/Documents/lab/prueba2.txt");
+            LinkedList<Double> rta=App.calculo("C:/Users/USUARIO/Documents/lab/prueba2.txt");
             assertEquals(df.format(rta.get(0)),"60.32");  
             assertEquals(df.format(rta.get(1)),"62.26");
         }
