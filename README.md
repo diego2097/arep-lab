@@ -3,6 +3,19 @@
 ## Objective 
 - Build a program that alllows to calculate the mean and standard deviation of a set of n numbers 
 
+##Program Description 
+The program calculates the mean and standard deviation. for this I used the method calculo that uses a linkedlist implemented in the class LinkedList. the following picture explains the classes design.  
+
+![alt text](https://github.com/diego2097/arep-lab/tree/master/apidocs/diseno.png "Classes design")
+
+The following formulas were used to calculate the mean and standard deviation.
+
+![alt text](https://github.com/diego2097/arep-lab/tree/master/apidocs/formulas.png "Formulas")
+
+The following values were used to test the program
+
+![alt text](https://github.com/diego2097/arep-lab/tree/master/apidocs/data.png "Data")
+
 ## Author 
 - Diego Alejandro Corredor Tolosa 
 
